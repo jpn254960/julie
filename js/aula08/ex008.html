@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            color: red;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var sinal=String(prompt('escolha um sina: '))
+        var n1=Number(prompt('escolha um numero: '))
+        var n2=Number(prompt('escolha outro numero: '))
+        var resultado='erro'
+
+        sinal=="+" ? resultado=n1+n2 : resultado=resultado
+        sinal=="x" ? resultado=n1*n2 : resultado=resultado
+        sinal=='/' ? resultado=n1/n2 : resultado=resultado
+        sinal=='-' ? resultado=n1-n2 : resultado=resultado
+        document.write(`o resultado da operação ${n1} ${sinal} ${n2} é igual a ${resultado}`)
+        
+    </script>
+</body>
+</html>

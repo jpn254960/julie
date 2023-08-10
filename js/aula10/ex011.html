@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: red;
+        color:white
+    }
+</style>
+
+<body>
+    <h1>cauculadora</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="somar" id='clicar' onclick="clique()">
+    <p id="text">resultado : </p>
+</body>
+
+<script>
+ function clique(){
+    var p= document.getElementById('text')
+    var txn1=document.getElementById('n1')
+    var txn2=document.getElementById('n2')
+    txn1= Number(txn1.value)
+    txn2= Number(txn2.value)
+    p.innerText=`resultado : ${txn1+txn2} `
+    console.log(txn1)
+    }
+</script>
+</html>

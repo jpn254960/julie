@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: brown;
+        font: normal 20pt arial;
+            color: white;
+    
+    }
+    </style>
+
+</head>
+<body>
+<script>
+    
+    var nome = String(prompt('qual seu nome? '))
+    document.write(`olá ${nome}, seu nome tem ${nome.length} letras <br> seu nome maiusculo é ${nome.toUpperCase()}<br>e minusculo é ${nome.toLowerCase()}<br>`)
+    var numero=123.4
+    document.write(`numero ${numero} <br> numero formatado com duas casa ${numero.toFixed(2)} <br> numero formatado com virgula ${numero.toFixed(2).replace('.',',')}`)
+    document.write(`<br>numero em real ${numero.toLocaleString('pt-br',{style:'currency', currency:'BRL'})}`)
+    document.write(`<br> o numero em dolar é ${numero.toLocaleString('pt-br',{style:'currency', currency:'USD'})}`)
+    document.write(`<br> o numero em euro é ${numero.toLocaleString('pt-br',{style:'currency',currency:'EUR'})}`)
+</script>    
+</body>
+</html>

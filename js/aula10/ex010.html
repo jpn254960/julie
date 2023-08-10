@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button#area{
+        font: normal 20pt arial;
+        background: red;
+        color:white;
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <button id="area">rr</button>
+</body>
+<script>
+    var f=document.getElementById('area')
+    f.addEventListener('click',clicar)
+    f.addEventListener('mouseenter',entrou)
+    f.addEventListener('mouseout',sair)
+    f.addEventListener('mouseup',deixou_de_clicar)
+    
+    function deixou_de_clicar(){
+        f.background='red'
+    }
+
+    function clicar(){
+        f.innerText='clicou'
+        f.style.background='blue'
+    }
+    function sair(){
+        f.innerText='saiu'
+        f.style.background='red'
+    }    
+    function entrou(){
+        f.innerText='entrou'
+    }
+</script>
+</html>

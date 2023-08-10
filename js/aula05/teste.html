@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: darkred;
+        color: white;
+        font: normal 20pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome=String(prompt('me fale seu nome? '))
+        var real= nome.length
+        var dolar=real/5
+        var euro=real/6
+        document.write(`seu nome vale ${real.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}<br>`)
+        document.write(`seu nome vale ${dolar.toLocaleString('pt-br',{style:'currency',currency:'USD'})}<br>`)
+        document.write(`seu nome vale ${euro.toLocaleString('pt-br',{style:'currency',currency:'EUR'})}`)
+</script>
+</body>
+</html>
