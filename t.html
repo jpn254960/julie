@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #c7c7c7;
+            font-family: 'Nunito', sans-serif;
+            text-align: center;
+        }
+        img{
+            object-fit: cover;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        #imgs{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            height: 260;
+            background-color: transparent;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .galeria{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding-bottom: 20px;
+        }
+
+        nav {
+            background-color: #1a1919;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 1em;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+        }
+        #icon{
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Estilo do menu de navegação responsivo */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5em 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Black And White Modern Vintage Retro Brand Logo.png" alt="pp">
+    </header>
+
+    <nav>
+        <a href="#home">🖼️galeria</a>
+        <a href="#about">📜Sobre</a>
+        <a href="#services">📁Serviços</a>
+        <a href="#contact">📞Contatos</a>
+        <a href="#mapa">📍ver rotas</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>GALERIA</h2>
+            <div id="imgs">
+                <img src="Black And White Modern Vintage Retro Brand Logo.png" alt="Imagem de exemplo" class="galeria">
+                <img   class="galeria" src="Captura de tela 2023-11-20 113126.png" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>SOBRE NÓS</h2>
+            <p>A InovaTech Solutions, fundada por Carla e Marcos, 
+            é uma empresa que nasceu da paixão pela inovação tecnológica. 
+            Iniciando em um pequeno escritório,
+            a empresa cresceu e se destacou no desenvolvimento de soluções personalizadas,
+            abraçando tecnologias emergentes. 
+            Com uma equipe dedicada e comprometida,
+            a InovaTech expandiu-se globalmente, 
+            mantendo-se fiel à sua cultura centrada no cliente. 
+            A jornada da empresa é uma história de resiliência, superação e excelência, 
+            marcando seu lugar como uma referência global em inovação tecnológica. 
+            O futuro da InovaTech promete continuar desafiando os limites da tecnologia, 
+            guiado pelo espírito inovador que a tornou uma força no mercado.            </p>
+        </section>
+
+        <section id="services">
+            <h2>NOSSOS SERVIÇOS</h2>
+            <p>atendimento via instagram</p>
+            <p>decontos sempre</p>
+            <p>o melhor preço do mercado</p>
+        </section>
+
+        <section id="mapa">
+            <h1>habilidades</h1>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.7795088972102!2d-46.46006583604514!3d-23.488930722783603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61a35315f079%3A0x3d7adde727433342!2sLoja%20favela%20venceu!5e0!3m2!1spt-BR!2sbr!4v1700445733812!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <p>somos otimos com desenvolvimento de sites <br>
+            trabalhamos sempre ao gosto do cliente <br>
+            fazemos um design para seu site</p>
+        </section>
+
+        <section id="contact">
+            <h2>ENTRE EM CONTATO</h2>
+
+            <img src="Logos_Doces_PNG_Images___Vetores_E_Arquivos_PSD___Download_Grátis_Em_Pngtree-removebg-preview.png" alt="insta" id="icon"> <a href=""> INSTAGRAM</a>
+            p
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para tornar o menu de navegação responsivo -->
+    <script>
+        const navToggle = document.createElement('button');
+        navToggle.textContent = 'Menu';
+        navToggle.setAttribute('aria-label', 'Toggle Navigation');
+        nav.appendChild(navToggle);
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>
